@@ -158,6 +158,36 @@ h3 {
     text-align: center;
 }
 
+#animatie {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin-top: 2em;
+}
+
+#gifs {
+    text-align: center;
+}
+
+.animatie {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+img[alt="walk"] {
+    height: 20em;
+}
+
+img[alt="blok"] {
+    width: 17em;
+}
+
+img[alt="ball"] {
+    height: 15em;
+    border: 2px solid black;
+}
+
 #oranje {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -203,6 +233,7 @@ img[alt="posterN"] {
     border: 1px solid #000000;
     margin-top: 1.5em;
     margin-bottom: 4em;
+    height: 40em;
 }
 
 img[alt="banier"] {
