@@ -2,8 +2,9 @@ body {
     font-family: sans-serif;
     display: grid;
     height: 100%;
+    color: hsl(0, 0%, 20%);
     grid-template-columns: 1fr 850px 1fr;
-    grid-template-rows: 30vw 8vw auto;
+    grid-template-rows: 30vw 23vw auto;
 }
 
 p {
@@ -51,6 +52,28 @@ header h2 {
     margin-top: -0.5em;
 }
 
+#over-mij {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 3em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#mij {
+    width: 15em;
+    height: 15em;
+}
+
+#ik {
+    margin-top: 2em;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: hsl(0, 0%, 20%);
+}
+
 .home {
     height: 15em;
     width: 15em;
@@ -65,7 +88,7 @@ header h2 {
     flex-wrap: wrap;
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
+    grid-row-start: 3;
     max-width: 850px;
 }
 

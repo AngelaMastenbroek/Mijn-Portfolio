@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     display: grid;
+    color: hsl(0, 0%, 20%);
     grid-template-columns: 1fr 850px 1fr;
     grid-template-rows: 12vw 30em auto;
 }

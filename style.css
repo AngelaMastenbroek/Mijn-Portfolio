@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     display: grid;
+    color: hsl(0, 0%, 20%);
     grid-template-columns: 1fr 850px 1fr;
     grid-template-rows: 12vw 8vw auto;
 }
@@ -338,17 +339,20 @@ img[alt="gif"] {
 img[alt="schets"] {
     height: 15em;
     margin: 2em;
-
 }
 
 img[alt="voorstel"] {
     width: 17em;
 }
 
+img[alt="voorstel2"] {
+    height: 30em;
+    margin-top: 1em;
+}
+
 img[alt="anato"] {
     height: 14em;
     margin: 2em;
-
 }
 
 #vogel {

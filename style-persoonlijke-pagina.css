@@ -1,5 +1,6 @@
 body {
     display: grid;
+    color: hsl(0, 0%, 20%);
     grid-template-columns: 13% 1fr 1fr 9%;
     grid-template-rows: 12vw 100px 350px 150px 450px 50px 350px 50px 500px 50px 400px 90px 450px 450px;
     grid-column-gap: 25px;

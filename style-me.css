@@ -1,8 +1,9 @@
 body {
     font-family: sans-serif;
     display: grid;
+    color: hsl(0, 0%, 20%);
     grid-template-columns: 1fr 850px 1fr;
-    grid-template-rows: 12vw 3vw 16vw auto;
+    grid-template-rows: 12vw 3vw 21vw auto;
 }
 
 header {
@@ -48,13 +49,14 @@ header h1 {
 }
 
 .home {
-    height: 15em;
+    height: 20em;
     width: 15em;
     object-fit: scale-down;
     margin: 1.2em;
     margin-top: 2em;
     background-color: white;
 }
+
 
 p {
     line-height: 1.5em;
@@ -147,12 +149,31 @@ p {
     grid-row-end: 4;
 }
 
-#ik {
-    grid-column-start: 2;
-    grid-column-end: 3;
+.fling-minislide {
+    grid-column-start: 3;
+    grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin-left: -17em;
+    margin-top: 3em;
+    width:350px;
+    height:300px;
+    overflow:hidden;
+    position:relative;
 }
+.fling-minislide img {
+    position:absolute;
+    animation:fling-minislide 20s infinite;
+    opacity:0;
+    width: auto;
+    height: 18em;
+}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+    .fling-minislide img:nth-child(4){animation-delay:0s;}
+    .fling-minislide img:nth-child(3){animation-delay:5s;}
+    .fling-minislide img:nth-child(2){animation-delay:10s;}
+    .fling-minislide img:nth-child(1){animation-delay:15s;}
 
 .mobile {
     height: 34em;
@@ -185,7 +206,7 @@ p {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    margin-left: 18em;
+    margin-right: 20em;
 }
 
 #uitleg2 {
@@ -194,6 +215,21 @@ p {
     grid-row-start: 4;
     grid-row-end: 5;
     margin-top: 1.5em;
+}
+
+#socials {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-left: 37.5em;
+    line-height: 40px;
+}
+
+#socials i {
+    margin-right: .5em;
+    color: #44979d;
+    font-size: 2em;
 }
 
 img[alt="oba"] {
@@ -284,11 +320,11 @@ img[alt="gif"] {
 
 #link {
     text-decoration: none;
-    color: #00626f;
+    color: #44979d;
 }
 
 #link:hover {
-    text-decoration: underline #007b8b;
+    text-decoration: underline #44979d;
 }
 
 #keuzes {
